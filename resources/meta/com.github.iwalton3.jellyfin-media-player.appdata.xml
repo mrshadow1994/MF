@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.github.iwalton3.jellyfin-media-player</id>
-  <name>Jellyfin Media Player</name>
+  <name>魔方私人影院</name>
   <summary>Desktop client for Jellyfin media server</summary>
   <developer id="com.github.iwalton3">
     <name>Izzie Walton</name>
