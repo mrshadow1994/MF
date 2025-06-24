@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=Jellyfin Media Player
+Name=魔方私人影院
 Comment=Desktop client for Jellyfin
 Exec=jellyfinmediaplayer
 Icon=com.github.iwalton3.jellyfin-media-player
