@@ -168,7 +168,7 @@ int main(int argc, char *argv[])
     }
 
     QApplication app(newArgc, newArgv);
-    app.setApplicationName("Jellyfin Media Player");
+    app.setApplicationName("MF Media Player");
 
 #if defined(Q_OS_WIN) 
     // Setting window icon on OSX will break user ability to change it
