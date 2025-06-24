@@ -250,7 +250,7 @@ jobs:
         strip_components: 2
         target: "/srv/incoming/client/jellyfin-media-player/ubuntu/${{ matrix.tag }}"
     - name: Import artifactsinto reprepro
-      uses: appleboy/ssh-action@029f5b4aeeeb58fdfe1410a5d17f967dacf36262 # v1.0.3
+      uses: appleboy/ssh-action@2ead5e36573f08b82fbfce1504f1a4b05a647c6f # v1.2.2
       with:
         host: "${{ secrets.REPO_HOST }}"
         username: "${{ secrets.REPO_USER }}"
@@ -263,7 +263,7 @@ jobs:
           sudo reprepro --waitforlock 30 --basedir /srv/ubuntu --component ${COMPONENT} includedeb ${{ matrix.tag }} /srv/incoming/client/jellyfin-media-player/ubuntu/${{ matrix.tag }}/*.deb || exit 1
           sudo reprepro --waitforlock 30 --basedir /srv/ubuntu --component ${COMPONENT} includedsc ${{ matrix.tag }} /srv/incoming/client/jellyfin-media-player/ubuntu/${{ matrix.tag }}/*.dsc || exit 1
     - name: Move artifacts into repository
-      uses: appleboy/ssh-action@029f5b4aeeeb58fdfe1410a5d17f967dacf36262 # v1.0.3
+      uses: appleboy/ssh-action@2ead5e36573f08b82fbfce1504f1a4b05a647c6f # v1.2.2
       with:
         host: "${{ secrets.REPO_HOST }}"
         username: "${{ secrets.REPO_USER }}"
@@ -321,7 +321,7 @@ jobs:
         strip_components: 2
         target: "/srv/incoming/client/jellyfin-media-player/debian/${{ matrix.tag }}"
     - name: Import artifactsinto reprepro
-      uses: appleboy/ssh-action@029f5b4aeeeb58fdfe1410a5d17f967dacf36262 # v1.0.3
+      uses: appleboy/ssh-action@2ead5e36573f08b82fbfce1504f1a4b05a647c6f # v1.2.2
       with:
         host: "${{ secrets.REPO_HOST }}"
         username: "${{ secrets.REPO_USER }}"
@@ -334,7 +334,7 @@ jobs:
           sudo reprepro --waitforlock 30 --basedir /srv/debian --component ${COMPONENT} includedeb ${{ matrix.tag }} /srv/incoming/client/jellyfin-media-player/debian/${{ matrix.tag }}/*.deb || exit 1
           sudo reprepro --waitforlock 30 --basedir /srv/debian --component ${COMPONENT} includedsc ${{ matrix.tag }} /srv/incoming/client/jellyfin-media-player/debian/${{ matrix.tag }}/*.dsc || exit 1
     - name: Move artifacts into repository
-      uses: appleboy/ssh-action@029f5b4aeeeb58fdfe1410a5d17f967dacf36262 # v1.0.3
+      uses: appleboy/ssh-action@2ead5e36573f08b82fbfce1504f1a4b05a647c6f # v1.2.2
       with:
         host: "${{ secrets.REPO_HOST }}"
         username: "${{ secrets.REPO_USER }}"
