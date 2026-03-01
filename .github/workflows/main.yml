@@ -46,7 +46,7 @@ jobs:
         ninja windows_package
       shell: cmd
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: windows-legacy64
         path: ${{ github.workspace }}/build/JellyfinMediaPlayer-*.exe
@@ -90,7 +90,7 @@ jobs:
         ninja windows_package
       shell: cmd
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: windows
         path: ${{ github.workspace }}/build/JellyfinMediaPlayer-*.exe
@@ -134,7 +134,7 @@ jobs:
         ninja windows_package
       shell: cmd
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: windows-legacy32
         path: ${{ github.workspace }}/build/JellyfinMediaPlayer-*.exe
